@@ -30,10 +30,9 @@ struct Trigger : Module {
 	Trigger() {
 		config(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS);
 		configParam(LATCH_PARAM, 0.f, 1.f, 0.f, "Latch");
-		configParam(TRIGGER_PARAMS + 0, 0.f, 1.f, 0.f, "Trigger 1");
-		configParam(TRIGGER_PARAMS + 1, 0.f, 1.f, 0.f, "Trigger 2");
-		configParam(TRIGGER_PARAMS + 2, 0.f, 1.f, 0.f, "Trigger 3");
-		configParam(TRIGGER_PARAMS + 3, 0.f, 1.f, 0.f, "Trigger 4");
+        for (int i = 0; i < 4; i++) {
+            configParam(TRIGGER_PARAMS + i, 0.f, 1.f, 0.f, string::f("Trigger %d",i));
+        }
 	}
 
 	void process(const ProcessArgs& args) override {
