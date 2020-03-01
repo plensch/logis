@@ -44,7 +44,7 @@ struct Constant : Module {
         }
 
         // set LED
-        lights[ON_LIGHT].setBrightness(on ? 0.9f : 0.f);
+        lights[ON_LIGHT].setBrightness(on);
 
         outputs[CONSTV0_OUTPUT].setVoltage(on ? params[VOLTAGE0_PARAM].getValue() : 0.f);
         outputs[CONSTV1_OUTPUT].setVoltage(on ? params[VOLTAGE1_PARAM].getValue() : 0.f);
@@ -61,7 +61,7 @@ struct ConstantWidget : ModuleWidget {
         // top screw
 		addChild(createWidget<ScrewSilver>(Vec(0, 0)));
         // bottom screw
-		addChild(createWidget<ScrewSilver>(Vec(box.size.x - 15, box.size - 15)));
+		addChild(createWidget<ScrewSilver>(Vec(30,365)));
 
 		addParam(createParamCentered<LEDBezel>(mm2px(Vec(7.62, 12.037)), module, Constant::ON_PARAM));
         addChild(createLightCentered<LEDBezelLight<GreenLight>>(mm2px(Vec(7.62, 12.037)), module, Constant::ON_LIGHT));

@@ -18,6 +18,14 @@
       "name": "Constant",
       "description": "generates a constant voltage",
       "tags": []
+    },
+    {
+      "slug": "Trigger",
+      "name": "Trigger",
+      "description": "generates (continuous) manual triggers",
+      "tags": [
+        "Utility"
+      ]
     }
   ]
 }
