@@ -7,16 +7,16 @@
   "author": "Philipp Lensch",
   "authorEmail": "p.lensch@lesh.eu",
   "authorUrl": "",
-  "pluginUrl": "",
+  "pluginUrl": "https://github.com/plensch/logis",
   "manualUrl": "",
-  "sourceUrl": "",
+  "sourceUrl": "https://github.com/plensch/logis",
   "donateUrl": "",
   "changelogUrl": "",
   "modules": [
     {
       "slug": "Constant",
       "name": "Constant",
-      "description": "",
+      "description": "generates a constant voltage",
       "tags": []
     }
   ]
