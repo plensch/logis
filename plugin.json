@@ -1,0 +1,23 @@
+{
+  "slug": "Logis",
+  "name": "Logis",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "brand": "Logis",
+  "author": "Philipp Lensch",
+  "authorEmail": "p.lensch@lesh.eu",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "Constant",
+      "name": "Constant",
+      "description": "",
+      "tags": []
+    }
+  ]
+}
